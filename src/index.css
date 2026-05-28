@@ -1,0 +1,255 @@
+@import "tailwindcss";
+
+/* ─── Design Tokens ───────────────────────────────── */
+:root {
+  --accent:        #E3BBA9;
+  --accent-dark:   #C4957E;
+  --bg:            #FDF8F5;
+  --surface:       #FAF0EA;
+  --text:          #1C1208;
+  --text-muted:    #6B5344;
+  --dark-bg:       #2A1F1A;
+  --darkest-bg:    #1C1208;
+  --dark-card:     #3D2B1F;
+  --dark-border:   #4A3228;
+  --wa-green:      #25D366;
+
+  --font-serif:  'Cormorant Garamond', Georgia, serif;
+  --font-sans:   'DM Sans', system-ui, sans-serif;
+}
+
+/* ─── Reset & Base ────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+/* ─── Typography ──────────────────────────────────── */
+.serif { font-family: var(--font-serif); }
+
+.hero-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1.08;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.section-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+}
+
+.body-text {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* ─── Layout Helpers ──────────────────────────────── */
+.container {
+  max-width: 1160px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.section-pad {
+  padding-block: 100px;
+}
+
+@media (max-width: 768px) {
+  .section-pad { padding-block: 64px; }
+}
+
+/* ─── Buttons ─────────────────────────────────────── */
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--wa-green);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.18s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+.btn-wa:hover { opacity: 0.9; transform: translateY(-1px); }
+
+.btn-outline-peach {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--accent-dark);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  border: 1.5px solid var(--accent-dark);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.18s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+.btn-outline-peach:hover {
+  background: var(--surface);
+  transform: translateY(-1px);
+}
+
+.btn-outline-peach-rect {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--accent-dark);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 14px 32px;
+  border-radius: 8px;
+  border: 1.5px solid var(--accent-dark);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.18s ease;
+  white-space: nowrap;
+}
+.btn-outline-peach-rect:hover { background: var(--surface); }
+
+.btn-wa-rect {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--wa-green);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 14px 32px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.18s ease;
+  white-space: nowrap;
+}
+.btn-wa-rect:hover { opacity: 0.9; }
+
+/* ─── Credential Pill ─────────────────────────────── */
+.cred-pill {
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface);
+  color: var(--accent-dark);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-dark);
+  white-space: nowrap;
+}
+
+/* ─── Service Card ────────────────────────────────── */
+.service-card {
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+  padding: 28px;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.service-card:hover {
+  border-color: var(--accent-dark);
+  transform: translateY(-3px);
+}
+
+/* ─── Review Card ─────────────────────────────────── */
+.review-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+/* ─── Map Card ────────────────────────────────────── */
+.map-card {
+  background: var(--surface);
+  border: 1.5px solid var(--accent);
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Info Block ──────────────────────────────────── */
+.info-block {
+  padding-block: 24px;
+  border-bottom: 1px solid var(--accent);
+}
+.info-block:first-child { padding-top: 0; }
+.info-block:last-child { border-bottom: none; padding-bottom: 0; }
+
+/* ─── Floating WA ─────────────────────────────────── */
+@keyframes wa-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.float-wa {
+  position: fixed;
+  bottom: 28px;
+  right: 24px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--wa-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+  text-decoration: none;
+  animation: wa-breathe 2s ease-in-out infinite;
+}
+.float-wa:hover { animation: none; transform: scale(1.08); }
+
+/* ─── Divider ─────────────────────────────────────── */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--accent);
+  margin-block: 24px;
+}
+
+/* ─── Stars ───────────────────────────────────────── */
+.stars { color: var(--accent); font-size: 14px; letter-spacing: 2px; }
