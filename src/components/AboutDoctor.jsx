@@ -37,7 +37,7 @@ export default function AboutDoctor() {
                 color: '#1C1208',
                 userSelect: 'none',
               }}>
-                VR
+                VA
               </span>
             </div>
 
