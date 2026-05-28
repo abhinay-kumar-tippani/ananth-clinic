@@ -63,7 +63,14 @@ export default function Footer() {
               lineHeight: 2.1,
             }}>
               <p>Mon–Sat · 6:00 PM – 9:00 PM</p>
-                <p>₹600 Consultation Fee</p>
+              <p>₹600 Consultation Fee</p>
+              <p style={{ color: '#6B5344', marginTop: '6px' }}>Closed Sundays &amp; holidays</p>
+            </div>
+          </div>
+
+          {/* Col 3 */}
+          <div>
+            <p style={{
               fontFamily: 'var(--font-sans)',
               fontSize: '11px',
               fontWeight: 500,
