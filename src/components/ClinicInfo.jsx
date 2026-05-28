@@ -4,7 +4,7 @@ const MAPS = 'https://maps.app.goo.gl/aAyzxe42bezP36AA9'
 const infoBlocks = [
   {
     label: 'Address',
-    value: 'Shop No. 14, Balaji Complex, Opp. Venkatadri Theatre,\nDilsukhnagar Main Road, Hyderabad – 500060',
+    value: 'Near Maruti Mandir, Opp. CMR Shopping Mall,\nBeside Metai Mandir, Dilsukhnagar Main Road,\nHyderabad – 500060',
   },
   {
     label: 'Timings',
@@ -12,7 +12,7 @@ const infoBlocks = [
   },
   {
     label: 'Consultation Fee',
-    value: '₹300 per visit · No hidden charges',
+    value: '₹600 per visit · No hidden charges',
   },
 ]
 
@@ -45,51 +45,18 @@ export default function ClinicInfo() {
         >
           {/* ── LEFT: Map card ── */}
           <div className="map-card">
-            {/* Visual area */}
-            <div style={{
-              flex: 1,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '48px 32px',
-              gap: '8px',
-              textAlign: 'center',
-              position: 'relative',
-              overflow: 'hidden',
-            }}>
-              {/* Subtle grid overlay */}
-              <div aria-hidden="true" style={{
-                position: 'absolute', inset: 0,
-                backgroundImage: `
-                  linear-gradient(rgba(196,149,126,0.08) 1px, transparent 1px),
-                  linear-gradient(90deg, rgba(196,149,126,0.08) 1px, transparent 1px)
-                `,
-                backgroundSize: '28px 28px',
-              }} />
-
-              <p className="serif" style={{
-                fontSize: '22px', fontWeight: 600,
-                color: '#1C1208', position: 'relative', zIndex: 1,
-              }}>
-                Ananth Skin &amp; Hair Clinic
-              </p>
-              <p style={{
-                fontFamily: 'var(--font-sans)', fontSize: '13px',
-                color: '#6B5344', position: 'relative', zIndex: 1,
-              }}>
-                Dilsukhnagar, Hyderabad
-              </p>
-              <p style={{
-                fontFamily: 'var(--font-sans)', fontSize: '12px',
-                color: '#C4957E', marginTop: '8px', position: 'relative', zIndex: 1,
-                letterSpacing: '0.04em',
-              }}>
-                Mon–Sat · 6 PM – 9 PM
-              </p>
+            <div style={{ borderRadius: '16px', overflow: 'hidden', marginBottom: '16px' }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0!2d78.5260!3d17.3686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98f6ff946625%3A0x78ff8ff5901ac33f!2sANANTH%20SKIN%20%26%20HAIR%20CLINIC!5e0!3m2!1sen!2sin!4v1"
+                width="100%"
+                height="380"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
 
-            {/* Get directions */}
             <a
               id="get-directions-btn"
               href={MAPS}

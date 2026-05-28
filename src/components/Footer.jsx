@@ -37,9 +37,9 @@ export default function Footer() {
               color: '#6B5344',
               lineHeight: 1.7,
             }}>
-              Shop No. 14, Balaji Complex,<br />
-              Opp. Venkatadri Theatre,<br />
-              Dilsukhnagar, Hyderabad – 500060
+              Near Maruti Mandir, Opp. CMR Shopping Mall,<br />
+              Beside Metai Mandir, Dilsukhnagar Main Road,<br />
+              Hyderabad – 500060
             </p>
           </div>
 
@@ -63,14 +63,7 @@ export default function Footer() {
               lineHeight: 2.1,
             }}>
               <p>Mon–Sat · 6:00 PM – 9:00 PM</p>
-              <p>₹300 Consultation Fee</p>
-              <p style={{ color: '#6B5344', marginTop: '6px' }}>Closed Sundays &amp; holidays</p>
-            </div>
-          </div>
-
-          {/* Col 3 */}
-          <div>
-            <p style={{
+                <p>₹600 Consultation Fee</p>
               fontFamily: 'var(--font-sans)',
               fontSize: '11px',
               fontWeight: 500,
