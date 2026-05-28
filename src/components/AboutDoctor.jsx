@@ -66,7 +66,7 @@ export default function AboutDoctor() {
 
             {/* Name */}
             <h2 className="section-headline" style={{ marginBottom: '6px' }}>
-              Dr. A. Venkata Ramana
+              Dr. A. Venkata Krishna
             </h2>
             <p style={{
               fontFamily: 'var(--font-sans)',
@@ -88,7 +88,7 @@ export default function AboutDoctor() {
               lineHeight: 1.8,
               marginBottom: '32px',
             }}>
-              Dr. A. Venkata Ramana has been treating skin and hair conditions in Dilsukhnagar since
+              Dr. A. Venkata Krishna has been treating skin and hair conditions in Dilsukhnagar since
               1993. A former professor at Osmania Hospital, he trained at Gandhi Medical College and
               completed his MD at Osmania Medical College. For over 36 years, patients across Hyderabad
               have trusted him for both routine dermatology and advanced laser procedures.
