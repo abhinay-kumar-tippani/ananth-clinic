@@ -48,7 +48,7 @@ export default function Hero() {
               marginBottom: '36px',
               lineHeight: 1.6,
             }}>
-              Dr. A. Venkata Krishna · MD Dermatology · 36 Years · Est. 1993
+              Dr. A. Venkata Krishna · MD Dermatology · 31 Years · Est. 1995
             </p>
 
             {/* CTA buttons */}
