@@ -89,7 +89,7 @@ export default function AboutDoctor() {
               marginBottom: '32px',
             }}>
               Dr. A. Venkata Krishna has been treating skin and hair conditions in Dilsukhnagar since
-              1993. A former professor at Osmania Hospital, he trained at Gandhi Medical College and
+              1995. A former professor at Osmania Hospital, he trained at Gandhi Medical College and
               completed his MD at Osmania Medical College. For over 36 years, patients across Hyderabad
               have trusted him for both routine dermatology and advanced laser procedures.
             </p>

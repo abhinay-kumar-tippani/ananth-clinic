@@ -115,7 +115,7 @@ export default function Hero() {
               color: '#6B5344',
               marginBottom: '10px',
             }}>
-              Est. 1993 · Dilsukhnagar, Hyderabad
+              Est. 1995 · Dilsukhnagar, Hyderabad
             </p>
             <p style={{
               fontFamily: 'var(--font-sans)',

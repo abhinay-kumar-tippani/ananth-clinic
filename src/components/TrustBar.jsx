@@ -2,7 +2,7 @@ const stats = [
   { value: '285+',   label: 'Google Reviews' },
   { value: '#1',     label: 'In Dilsukhnagar' },
   { value: '36 Yrs', label: 'Clinical Experience' },
-  { value: '1993',   label: 'Year Established' },
+  { value: '1995',   label: 'Year Established' },
 ]
 
 export default function TrustBar() {

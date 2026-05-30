@@ -29,7 +29,7 @@ export default function Footer() {
               lineHeight: 1.7,
               marginBottom: '16px',
             }}>
-              Trusted Skin &amp; Hair Care in<br />Dilsukhnagar Since 1993
+              Trusted Skin &amp; Hair Care in<br />Dilsukhnagar Since 1995
             </p>
             <p style={{
               fontFamily: 'var(--font-sans)',
