@@ -1,7 +1,7 @@
 const stats = [
   { value: '285+',   label: 'Google Reviews' },
   { value: '#1',     label: 'In Dilsukhnagar' },
-  { value: '36 Yrs', label: 'Clinical Experience' },
+  { value: '31 Yrs', label: 'Clinical Experience' },
   { value: '1995',   label: 'Year Established' },
 ]
 

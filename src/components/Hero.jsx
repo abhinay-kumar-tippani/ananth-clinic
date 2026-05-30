@@ -93,7 +93,7 @@ export default function Hero() {
               lineHeight: 1,
               marginBottom: '4px',
             }}>
-              36
+              31
             </p>
             <p style={{
               fontFamily: 'var(--font-sans)',
